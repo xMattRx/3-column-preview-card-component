@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lexend: "Lexend Deca", sans-serif;
+  --big: "Big Shoulders Display", cursive;
+  --orange: hsl(31, 77%, 52%);
+  --green: hsl(184, 100%, 22%);
+  --dark-green: hsl(179, 100%, 13%);
+}
+
+body {
+  align-items: center;
+  background: hsl(0deg, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+}
+body .container {
+  display: flex;
+  margin: 30px;
+}
+@media screen and (max-width: 600px) {
+  body .container {
+    flex-direction: column;
+    margin: 80px 10px;
+  }
+}
+body .container section {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  font-family: var(--big);
+  padding: 30px 50px 35px 45px;
+}
+body .container section img {
+  margin-bottom: 30px;
+}
+body .container section h1 {
+  margin-bottom: 33px;
+}
+body .container section p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: var(--lexend);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  max-width: 209px;
+  line-height: 25px;
+}
+body .container section button {
+  background: hsl(0deg, 0%, 100%);
+  border: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--lexend);
+  padding: 10px 22px;
+  transition: all 0.2s;
+}
+body .container section button:hover {
+  color: #FFF;
+  background: transparent;
+}
+body .container .sedans {
+  background-color: var(--orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body .container .sedans button {
+  color: var(--orange);
+}
+body .container .suvs {
+  background-color: var(--green);
+}
+body .container .suvs button {
+  color: var(--green);
+}
+body .container .luxury {
+  background-color: var(--dark-green);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body .container .luxury button {
+  color: var(--dark-green);
+}/*# sourceMappingURL=style.css.map */
